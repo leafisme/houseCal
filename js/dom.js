@@ -265,7 +265,7 @@ var domOperate = {
             }
         })
         callilv.forEach(function (item, index) {
-            lilvbindArray[index] = '<option value="' + item.lilv + '" >' + item.name + '</option>'
+            lilvbindArray[index] = '<option value="' + item.lilv + '" >' + item.name  + '(' +item.lilv+ ')'+'</option>'
         })
         $("#" + id).html(lilvbindArray.join(""));
 
